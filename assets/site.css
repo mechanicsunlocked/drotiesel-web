@@ -90,6 +90,18 @@ ol.steps p{color:var(--muted);font-size:.95rem}
 .cards div{display:flex;flex-direction:column;gap:.4rem}
 .cards p{color:var(--muted);font-size:.95rem}
 .about p{font-size:1.15rem}
+/* brands: logo tiles stay light in both themes, so that the brands' own logo files show correctly */
+.brandgroups{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.bgroup{display:flex;flex-direction:column;gap:.9rem}
+.bgroup h3{font-family:var(--f-mono);font-stretch:100%;font-weight:400;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.logos{list-style:none;margin:0;padding:0;display:grid;gap:.8rem;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:520px){.logos{gap:.5rem}.logos a{min-height:92px;padding:.8rem .35rem}.bn{font-size:.82rem}.bw{font-size:.58rem;letter-spacing:.02em}}
+.logos a{height:100%;min-height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;padding:1rem .6rem;border-radius:8px;background:#FFFFFF;border:1px solid var(--line);color:#1D2A33;text-decoration:none;text-align:center;transition:border-color .15s}
+.logos a:hover{border-color:var(--accent)}
+.logos img{max-width:100%;max-height:44px;width:auto;filter:grayscale(1);opacity:.85;transition:filter .2s,opacity .2s}
+.logos a:hover img{filter:none;opacity:1}
+.bn{font-family:var(--f-display);font-stretch:112%;font-weight:800;font-size:1.02rem;line-height:1.15;letter-spacing:.02em}
+.bw{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.06em;color:#5B6870}
 .contact dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.7rem 1.4rem;font-size:1.05rem}
 .contact dt{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:.25rem}
 .contact dd{margin:0}
